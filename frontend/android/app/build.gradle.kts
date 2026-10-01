@@ -33,8 +33,8 @@ android {
         versionName = flutter.versionName
 
         ndk {
-            // arm64-v8a = real phones, x86_64 = Android emulator on a PC
-            abiFilters += listOf("arm64-v8a", "x86_64")
+            // Build only the 64-bit ARM APK used by modern Android phones.
+            abiFilters += listOf("arm64-v8a")
         }
     }
 
